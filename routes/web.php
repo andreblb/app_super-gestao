@@ -12,7 +12,7 @@ Route::get('/', function () {
     return "Estou funcionando";
 });
 */
-Route::get('/', [PrincipalController::class, 'principal']);
+Route::get('/', [PrincipalController::class, 'principal'])->name('site.index');
 
 Route::get('/contato', [ContatoController::class, 'contato']);
 
